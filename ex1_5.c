@@ -5,5 +5,5 @@ int main()
 {
   float fahr;
   for(fahr=0;fahr>=0;fahr--)
-      printf("%6.2f\u2103\t=\t\u2109\n",fahr,((5.0/9.0)*(fahr-32.0));
+      printf("%6.0f\u2103\t=\t%6.2f\u2109\n",fahr,((5.0/9.0)*(fahr-32.0));
  }
