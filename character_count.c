@@ -1,5 +1,5 @@
 //Program counts the number of input characters.
-
+///////////////////////////////////////////////  Logic-1  //////////////////////////////////////////////////////////////////////
 #include<stdio.h>
 int main()
 {
@@ -18,3 +18,14 @@ int main()
   -> 'nc' is declared as 'long' type, because it has higher storage capacity than int value.
 
 */
+
+///////////////////////////////////////////   Logic-2   ///////////////////////////////////////////////////////////////////////
+
+#include<stdio.h>
+int main()
+{
+  long nc;
+  
+  for(nc=0;getchar()!=EOF;nc++);
+  printf("The number of characters entered :\t%ld\n",nc);
+}
