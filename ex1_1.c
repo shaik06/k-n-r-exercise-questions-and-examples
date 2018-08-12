@@ -1,3 +1,6 @@
+//Experiment with leaving out the parts of the 'hello,world' program.
+
+
 /*Code without any errors.
 
 #include<stdio.h>
