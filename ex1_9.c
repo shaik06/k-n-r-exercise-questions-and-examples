@@ -26,3 +26,10 @@ int main()
        }
    }
 }
+
+/* code feedback:
+
+-> whenever a blank character is encountered , 'bl' gets incremented, and if 'bl' exceeds more than '1', 
+   then the next statement gets executed is the test condition because of the 'continue' statement.
+
+*/
