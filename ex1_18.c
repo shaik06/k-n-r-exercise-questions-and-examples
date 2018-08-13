@@ -1,4 +1,5 @@
 //Program to remove trailing blanks and tabs from each line of input.
+////////////////////////////////////////////////////Logic-1//////////////////////////////////////////////////////////////
 
 #include<stdio.h>
 #define MAX 1000
@@ -63,3 +64,53 @@ int remove_trail(char x[])
    else
       return 0;
 }
+
+/* code feedback:
+
+-> To remove trailing blanks, the continuous white-space characters except '\n' are stored in a buffer, and then the 
+    index value is altered to remove the trailing blanks.
+-> Using too many variables used to code a small program.
+
+*/
+
+////////////////////////////////////////////////////////Logic-2///////////////////////////////////////////////////////////
+
+#include<stdio.h>
+int main()
+{
+  int ch;
+  char buff[100]={0};
+  int s=0;
+  
+  printf("Please enter the input.\n");
+  
+  while((ch=getchar())!=EOF)
+  {
+      if(ch==' ' || ch=='\t')
+        buff[s++]=ch;
+
+      else if(ch=='\n')
+        {
+          if(s)
+                s=0;
+          putchar(ch);
+        }
+
+      else
+      {
+        if(s)
+        {
+                for(int j=0;j<s;j++)
+                        putchar(buff[s]);
+                s=0;
+        }
+
+        putchar(ch);
+      }
+  }
+
+}
+
+/* code feedback:
+-> Though the code is not modularized, the code lines are reduced, and kept implementation specific.
+*/
