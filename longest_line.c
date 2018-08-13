@@ -24,7 +24,7 @@ int main()
    {
     printf("The length of the longest line:\t\n",max);
     printf("The longest line: \n");
-    printf("%s\n",copy);
+    printf("%s\n",longest);
    }
 }
   
